@@ -16,3 +16,11 @@ body::before {
     height: 60px;
 
 }
+
+.btn-light:hover {
+ opacity: .9;
+}
+
+.btn-dark:hover {
+    opacity: .9;
+}

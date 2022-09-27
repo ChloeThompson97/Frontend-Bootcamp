@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact - Front-end Bootcamp</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Front-end Bootcamp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#learn" class="nav-link">What You'll Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#instructors" class="nav-link">Instructors</a>
+                    </li>
+                    <a href="FAQs.html" class="nav-link">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Got a <span class="text-warning">Question?</span> </h1>
+                    <p class="lead my-4">Pop over an email or give us a call</p>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="contact.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <div class="containe m-5 px-5">
+        <form action="https://formsubmit.co/48875f39c1b086574e577a83d9bfc5df " method="POST" class="row g-3">           
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_autoresponse" value="Thank you for your message. One of our team will be in contact shortly. 
+           This email was automatically generated.">
+            <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" name="firstName" id="firstName" required>
+            </div>
+            <div class="col-md-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" name="lastName" id="lastName" required>
+            </div>
+            <div class="col-md-8">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" name="email" id="email" required>
+            </div>
+            <div class="col-md-4">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" name="phone" id="phone" placeholder="+44" required>
+            </div>
+            <div class="col-md-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
+            </div>
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Contact and Map -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> 50 Main Street, Notting Hill, London UK
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Phone</span> (+44) 1233 122554
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Email</span> enrollment@frontendbootcamp.co.uk
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Phone</span> (+44) 1233 122244
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Email</span> student@frontendbootcamp.co.uk
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 text-white text-center position-relative bg-dark">
+        <div class="container">
+            <p class="lead">Copyright &copy; WEBCT 2022</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiY2hsb2V0aG9tcHNvbjk3IiwiYSI6ImNsNzk3dncxZDAxdjUzb282YzV1bXRlOTUifQ.QxaiswdgYjtKaqBqrPGqeg';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-0.118092, 51.509865],
+            zoom: 18,
+        });
+    </script>
+
+</body>
+
+</html>

@@ -24,3 +24,13 @@ body::before {
 .btn-dark:hover {
     opacity: .9;
 }
+
+.ns {
+    text-decoration: none;
+    color: white;
+}
+
+.ns:hover {
+    color: white;
+    opacity: .9;
+}

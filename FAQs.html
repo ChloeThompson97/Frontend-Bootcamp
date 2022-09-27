@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>FAQs - Front-end Bootcamp</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Front-end Bootcamp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#learn" class="nav-link">What You'll Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#instructors" class="nav-link">Instructors</a>
+                    </li>
+                    <a href="#" class="nav-link">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link" target="_blank">Contact</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Looking for <span class="text-warning"> answers?</span> </h1>
+                    <p class="lead my-4">We're here to help</p>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="FAQs.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="p-5" id="questions">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush" id="questions">
+                <h4 class="mb-4">About Front-end Bootcamp</h4>
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-1" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Where exactly are you located?
+                        </button>
+                    </h2>
+                    <div id="question-1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">Our Head Office and in-person teaching hub is located at 50 Main
+                            Street, Notting Hill, in Central London. We offer fully virtual and hybrid learning models
+                            to suit each individual.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#question-2" aria-expanded="false" aria-controls="flush-collapseOne">
+                        How do I enroll?
+                    </button>
+                </h2>
+                <div id="question-2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#questions">
+                <div class="accordion-body">
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Start
+                        The
+                        Enrollment</button><br><br>
+                        Starting the enrollment process is easy, click the button above to start the enrollment
+                        process. We will then get in contact with you to discuss the next steps within the next 24
+                        working hours.
+                    </div>
+                </div>
+            </div>
+          
+            <!-- Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#question-3" aria-expanded="false" aria-controls="flush-collapseOne">
+                       What type of people do you teach?
+                    </button>
+                </h2>
+                <div id="question-3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#questions">
+                    <div class="accordion-body">People like you. We have taught people who are school leavers, recent graduates, mid-career and looking for a change and also those looking to embark on a new career after having children or a career break. <br><br> Front-end bootcamp has formed a strong, diverse digital community, and learning within such a team is great for everyone, we all bring something unique to the table.
+                    </div>
+                </div>
+            </div>
+            <h4 class="my-4">The Bootcamp</h4>
+                <!-- Item 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-4" aria-expanded="false" aria-controls="flush-collapseOne">
+                           What time do your courses run each day?
+                        </button>
+                    </h2>
+                    <div id="question-4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">Our coding bootcamp runs from 9:00 to 17:00 Monday to Friday. Don't worry, we take 2 short breaks throughout the day, 1 in the morning and the other late afternoon, we also take 45 minutes for lunch.</div>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-5" aria-expanded="false" aria-controls="flush-collapseOne">
+                            How many contact hours will I get?
+                        </button>
+                    </h2>
+                    <div id="question-5" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">You'll recieve a massive 640 contact hours whilst enrolled with Front-end Bootcamp. You may think this is higher than other Bootcamps you have seen, but we strongly believe that this is what you'll need to be fully prepared for your first tech role.</div>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-6" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Do I need my own laptop?
+                        </button>
+                    </h2>
+                    <div id="question-6" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">Yes, you'll need to bring your own laptop for our courses.</div>
+                    </div>
+                </div>
+                <!-- Item 7 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-7" aria-expanded="false" aria-controls="flush-collapseOne">
+                            How much experience do I need?
+                        </button>
+                    </h2>
+                    <div id="question-7" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">None. You are eligible for our Bootcamp with absolutely no prior coding experience. However we do suggest that you would try some introductory courses and exercises that can be found on a bunch of websites such as <a href="https://www.freecodecamp.org/learn" target="_blank">freeCodeCamp</a> and <a href="https://www.codecademy.com/" target="_blank">Codecademy</a> to name a few. This will help you discover whether a Bootcamp is right for you before you commit to the course.</div>
+                    </div>
+                </div>
+                <h4 class="my-4">After Bootcamp Completion</h4>
+                <!-- Item 8 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-8" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Do you help me find a job?
+                        </button>
+                    </h2>
+                    <div id="question-8" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">Front-end Bootcamp provides all of the support and guidance you need
+                            to land your first tech job.<br><br> Throughout the course, we'll deliver a range of
+                            sessions to help you get ahead, including an in-depth CV workshop, tech interview advice and
+                            practice, industry insights and industry preparation sessions to name a few. <br><br> You'll
+                            also have 1-to-1 time with one of our careers mentors, plus private access to any vaccancies
+                            we have available through our network.
+                    </div>
+                </div>
+                <!-- Item 9 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-9" aria-expanded="false" aria-controls="flush-collapseOne">
+                            How much can I expect to be paid?
+                        </button>
+                    </h2>
+                    <div id="question-9" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">The vast majority of our graduates will earn a starting salary of £22,000 – £30,000.
+                    </div>
+                </div>
+                <h4 class="my-4">Paying for Front-end Bootcamp</h4>
+                  <!-- Item 10 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#question-10" aria-expanded="false" aria-controls="flush-collapseOne">
+                        How much does it cost to attend?
+                    </button>
+                </h2>
+                <div id="question-10" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#questions">
+                    <div class="accordion-body">The total cost of our coding bootcamp is £5500. The main 15-week
+                        coding bootcamp costs £5000, and the Introductory week costs £500.<br><br> If after the
+                        induction week you do not want to continue progressing onto the core bootcamp, you will
+                        receive your coding bootcamp fees back in full, no questions asked. 
+                </div>
+            </div>
+                  <!-- Item 11 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#question-11" aria-expanded="false" aria-controls="flush-collapseOne">
+                        What is the Advance payment option?
+                    </button>
+                </h2>
+                <div id="question-11" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#questions">
+                    <div class="accordion-body">Pay 1 month of your course fees upfront and get a lower
+                        16-week bootcamp price of £4500 (ususally £5500). Another option available to our students is
+                        the Deferred payment option, this allows the fees to be paid back, interest free, over the
+                        course of 24 months.
+                    </div>
+                </div>
+            </div>
+                  <!-- Item 12 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#question-12" aria-expanded="false" aria-controls="flush-collapseOne">
+                        What is the Deferred payment option?
+                    </button>
+                </h2>
+                <div id="question-12" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#questions">
+                    <div class="accordion-body"> Another option available to our students is
+                        the Deferred payment option, this allows the fees to be paid back, interest free, over the
+                        course of 24 months.
+                    </div>
+                </div>
+            </div>
+                  <!-- Item 13 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#question-13" aria-expanded="false" aria-controls="flush-collapseOne">
+                        How much do I have to pay upfront if I use the Deferred payment option?
+                    </button>
+                </h2>
+                <div id="question-13" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#questions">
+                    <div class="accordion-body"> First off, you'll need to pay the fee for the Introduction week, which is £500.If after the
+                        induction week you do not want to continue progressing onto the core bootcamp, you will
+                        receive your coding bootcamp fees back in full, no questions asked. <br><br> Secondly, you'll need to place a deposit of £350 towards the cost of your £5000 15-week Bootcamp fee.<br><br> The total you will pay is £5500 using the Deferred payment option.
+                    </div>
+                </div>
+            </div>
+                  <!-- Item 14 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#question-13" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Are there any finance options available?
+                    </button>
+                </h2>
+                <div id="question-13" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#questions">
+                    <div class="accordion-body"> There are many finance plans available to our students, to qualify for a finance option you must be a UK citizen. This is because we work with FCA-regulated companies who can provide alternative ways of covering your course fees. If you aren't a UK citizen you can still join Front-end Bootcamp on our Advance payment option.
+                    </div>
+                </div>
+            </div>                
+    </section>
+
+    <!-- Newletter -->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Can't find the answer you're looking for?</h3>
+                <div>
+                    <button class="btn btn-dark btn-lg" type="button"><a href="contact.html" class="ns" target="_blank">Contact Us</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+
+    <!-- Contact and Map -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> 50 Main Street, Notting Hill, London UK
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Phone</span> (+44) 1233 122554
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Email</span> enrollment@frontendbootcamp.co.uk
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Phone</span> (+44) 1233 122244
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Email</span> student@frontendbootcamp.co.uk
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 text-white text-center position-relative bg-dark">
+        <div class="container">
+            <p class="lead">Copyright &copy; WEBCT 2022</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Enroll Today</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Fill out this form and we will get back to you.</p>
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="first-name" class="col-form-label">
+                                First Name:
+                            </label>
+                            <input type="text" class="form-control" id="first-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="last-name" class="col-form-label">
+                                Last Name:
+                            </label>
+                            <input type="text" class="form-control" id="last-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email-address" class="col-form-label">
+                                Email Address:
+                            </label>
+                            <input type="text" class="form-control" id="email-address">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="col-form-label">
+                                Phone:
+                            </label>
+                            <input type="text" class="form-control" id="phone">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiY2hsb2V0aG9tcHNvbjk3IiwiYSI6ImNsNzk3dncxZDAxdjUzb282YzV1bXRlOTUifQ.QxaiswdgYjtKaqBqrPGqeg';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-0.118092, 51.509865],
+            zoom: 18,
+        });
+    </script>
+
+</body>
+
+</html>
